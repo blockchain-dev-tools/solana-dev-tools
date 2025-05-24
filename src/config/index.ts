@@ -1,2 +1,2 @@
 
-export const basePath = "/blockchain-dev-tools";
+export const basePath = "/solana-dev-tools";
