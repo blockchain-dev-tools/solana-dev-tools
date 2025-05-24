@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata } from "next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,3 +28,8 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Solana Raw Transaction Decoder",
+  description: "Decode Solana Raw Signed Transactions",
+};

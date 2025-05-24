@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
-import SolanaTransactionDecoder from "@/components/SolanaTransactionDecoder";
+'use client';
 
-export const metadata: Metadata = {
-  title: "Solana Raw Transaction Decoder",
-  description: "Decode Solana Raw Signed Transactions",
-};
+import dynamic from 'next/dynamic';
 
+// Import the component dynamically with SSR disabled
+const SolanaTransactionDecoder = dynamic(
+  () => import('@/components/SolanaTransactionDecoder'),
+  { ssr: false } // This ensures the component only loads on the client side
+);
 
 export default function Home() {
   return (
@@ -20,4 +21,3 @@ export default function Home() {
     </div>
   );
 }
-

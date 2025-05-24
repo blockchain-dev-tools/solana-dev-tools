@@ -17,7 +17,11 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, "Courier New", monospace;
+}
+
+.text-mocano {
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, "Courier New", monospace;
 }
 
 .text-shadow-glow {
